@@ -132,6 +132,11 @@ PUSHOVER_EMERGENCY_EXPIRATION = 86400
 PUSHBULLET_CLIENT_ID = None
 PUSHBULLET_CLIENT_SECRET = None
 
+# Telegram integration
+TELEGRAM_BOT_NAME = 'HealthChecksBot'
+TELEGRAM_TOKEN = '414884769:AAGL-NXVbmrYkARUvc8ENrLaBfk08Xo7HOw'
+
+
 if os.path.exists(os.path.join(BASE_DIR, "hc/local_settings.py")):
     from .local_settings import *
 else:
